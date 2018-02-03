@@ -1,0 +1,114 @@
+$color1: rgba(255, 217, 218, 1);
+$color2: rgba(234, 11, 78, 1);
+$color3: rgb(87, 3, 42);
+$color4: rgba(48, 52, 63, 1);
+$color5: rgba(27, 32, 33, 1);
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  font: 14px 'Merriweather', Helvetica, Arial, sans-serif;
+  color: #4d4d4d;
+  min-width: 550px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 560px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 217, 218, 1);
+
+  .logo {
+    background-image: url(../assets/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    background-size: 100%;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+  }
+
+  .app-title {
+    span {
+      font-size: 45px;
+
+      color: $color4;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: -3px;
+      line-height: 1;
+      text-shadow: #ffc1c1 3px 2px 0;
+    }
+
+    .slogan {
+      font-size: 14px;
+      color: $color2 ;
+    }
+  }
+}
+
+.app-container {
+  margin-top: 160px;
+  background-color: whitesmoke;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  padding-left: 4em;
+  padding-right: 4em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .control-buttons {
+    font-size: 20px;
+  }
+
+  .add-button {
+    float: right;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p i {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  li {
+    margin-top:1em;
+    border:1px solid black;
+    border-radius:.5em;
+    padding:1em;
+    list-style-position: inside;
+  }
+
+  .green{
+    background-color: #66ff66;
+  }
+
+  .gray{
+    background-color: #EEE;
+  }
+
+  .yellow{
+    background-color: #f4e242;
+  }
+}
